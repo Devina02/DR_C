@@ -86,6 +86,34 @@ namespace DR_C
                                                         Console.ReadLine();
                                                     }
                                                 }
+                                                break;
+                                            case '3':
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Input Data Pasien\n");
+                                                    Console.Write("Masukkan ID_pasien : ");
+                                                    string id_p = Console.ReadLine();
+                                                    Console.Write("Masukkan ID Dokter : ");
+                                                    string id_dp = Console.ReadLine();
+                                                    Console.Write("Masukkan Nama depan  : ");
+                                                    string Nmadpn_p = Console.ReadLine();
+                                                    Console.Write("Masukkan nama belakang : ");
+                                                    string Nmablk_p = Console.ReadLine();
+                                                    Console.Write("Masukkan Tanggal datang: ");
+                                                    string tgl_dt = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(id_p, id_dp, Nmadpn_p, Nmablk_p, tgl_dt);
+                                                        conn.Close();
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki akses untuk menambah data");
+                                                        Console.WriteLine("Tekan enter untuk melanjutkan.");
+                                                        Console.ReadLine();
+                                                    }
+                                                }
+                                                break;
                                         }
                                         
                                     }
