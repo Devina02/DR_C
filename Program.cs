@@ -158,7 +158,33 @@ namespace DR_C
                                                     }
                                                 }
                                                 break;
-                                            
+                                            case '6':
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Input Rawat Inap\n");
+                                                    Console.Write("Masukkan id rawat: ");
+                                                    string idrg_RI = Console.ReadLine();
+                                                    Console.Write("Masukkan nama depan : ");
+                                                    string nmadepan_RI = Console.ReadLine();
+                                                    Console.Write("Masukkan nama belakang : ");
+                                                    string nmablkng_RI = Console.ReadLine();
+                                                    Console.Write("Masukkan id pasien : ");
+                                                    string idpsn_RI = Console.ReadLine();
+                                                    Console.Write("Masukkan id ruang : ");
+                                                    string idruang_RI = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(idrg_RI, nmadepan_RI, nmablkng_RI, idpsn_RI, idruang_RI);
+                                                        conn.Close();
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki akses untuk menambah data");
+                                                        Console.WriteLine("Tekan enter untuk melanjutkan.");
+                                                        Console.ReadLine();
+                                                    }
+                                                }
+                                                break;
                                         }
                                         
                                     }
