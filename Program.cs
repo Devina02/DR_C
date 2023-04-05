@@ -37,6 +37,19 @@ namespace DR_C
                                 conn = new SqlConnection(string.Format(strKoneksi, db, user, pass));
                                 conn.Open();
                                 Console.Clear();
+                                while (true)
+                                {
+                                    try
+                                    {
+                                        Console.Clear();
+                                        Console.WriteLine("\nMenu");
+                                        Console.WriteLine("1. Melihat seluruh data");
+                                        Console.WriteLine("2. Tambah data");
+                                        Console.WriteLine("3. Keluar");
+                                        Console.Write("\nEnter your choice (1-3) : ");
+                                    }
+
+                                }
                             }
                     }
                 }
