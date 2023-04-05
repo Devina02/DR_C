@@ -114,6 +114,29 @@ namespace DR_C
                                                     }
                                                 }
                                                 break;
+                                            case '4':
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Input Data Keluhan\n");
+                                                    Console.Write("Masukkan kode_keluhan: ");
+                                                    string kd_k = Console.ReadLine();
+                                                    Console.Write("Masukkan keluhan : ");
+                                                    string klhn = Console.ReadLine();
+                                                    Console.Write("Masukkan id_pasien  : ");
+                                                    string id_pk = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(kd_k, klhn, id_pk);
+                                                        conn.Close();
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki akses untuk menambah data");
+                                                        Console.WriteLine("Tekan enter untuk melanjutkan.");
+                                                        Console.ReadLine();
+                                                    }
+                                                }
+                                                break;
                                         }
                                         
                                     }
