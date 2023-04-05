@@ -137,7 +137,7 @@ namespace DR_C
                                                     }
                                                 }
                                                 break;
-                                            case '4':
+                                            case '5':
                                                 {
                                                     Console.Clear();
                                                     Console.WriteLine("Input Ruang Rawat Inap\n");
@@ -158,6 +158,7 @@ namespace DR_C
                                                     }
                                                 }
                                                 break;
+                                            
                                         }
                                         
                                     }
