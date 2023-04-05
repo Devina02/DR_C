@@ -65,15 +65,15 @@ namespace DR_C
                                                     Console.Clear();
                                                     Console.WriteLine("Input Data Dokter\n");
                                                     Console.Write("Masukkan ID Dokter : ");
-                                                    string NIM = Console.ReadLine();
+                                                    string id_d = Console.ReadLine();
                                                     Console.Write("Masukkan Nama depan  : ");
-                                                    string NmaMhs = Console.ReadLine();
+                                                    string Nmadpn_d = Console.ReadLine();
                                                     Console.Write("Masukkan nama belakang : ");
-                                                    string Almt = Console.ReadLine();
+                                                    string Nmablk_d = Console.ReadLine();
                                                     Console.Write("Masukkan gelar: ");
-                                                    string jk = Console.ReadLine();
+                                                    string glr = Console.ReadLine();
                                                     Console.Write("Masukkan spesialisasi dokter : ");
-                                                    string notlpn = Console.ReadLine();
+                                                    string spld = Console.ReadLine();
                                                 }
                                         }
                                         
