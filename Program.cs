@@ -61,9 +61,22 @@ namespace DR_C
                                                 }
                                                 break;
                                             case '2':
-                                                8
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Input Data Dokter\n");
+                                                    Console.Write("Masukkan ID Dokter : ");
+                                                    string NIM = Console.ReadLine();
+                                                    Console.Write("Masukkan Nama depan  : ");
+                                                    string NmaMhs = Console.ReadLine();
+                                                    Console.Write("Masukkan nama belakang : ");
+                                                    string Almt = Console.ReadLine();
+                                                    Console.Write("Masukkan gelar: ");
+                                                    string jk = Console.ReadLine();
+                                                    Console.Write("Masukkan spesialisasi dokter : ");
+                                                    string notlpn = Console.ReadLine();
+                                                }
                                         }
-                                        }
+                                        
                                     }
 
                                 }
