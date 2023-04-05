@@ -47,6 +47,8 @@ namespace DR_C
                                         Console.WriteLine("2. Tambah data");
                                         Console.WriteLine("3. Keluar");
                                         Console.Write("\nEnter your choice (1-3) : ");
+                                        char ch = Convert.ToChar(Console.ReadLine());
+                                       
                                     }
 
                                 }
