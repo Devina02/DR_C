@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,20 @@ namespace DR_C
                     Console.Write("Masukkan DataBase tujuan : ");
                     string db = Console.ReadLine();
                     Console.Write("\nKetik K untuk koneksi ke DataBase : ");
+                    char chr = Convert.ToChar(Console.ReadLine());
+                    switch (chr)
+                    {
+                        case 'k':
+                            {
+                                SqlConnection conn = null;
+                                string strKoneksi = "Data source = LAPTOP-DP3PQGGM\\DEPIIII; " +
+                                    "initial catalog = {0}; " +
+                                    "User ID = {1}; password = {2}";
+                                conn = new SqlConnection(string.Format(strKoneksi, db, user, pass));
+                                conn.Open();
+                                Console.Clear();
+                            }
+                    }
                 }
             }
         }
