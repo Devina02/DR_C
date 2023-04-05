@@ -210,6 +210,18 @@ namespace DR_C
                                                     }
                                                 }
                                                 break;
+                                            case '8':
+                                                conn.Close();
+                                                return;
+                                            default:
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("\nInvalid option");
+                                                    Console.WriteLine("Tekan enter untuk melanjutkan.");
+                                                    Console.ReadLine();
+                                                }
+                                                break;
+
                                         }
                                         
                                     }
