@@ -32,8 +32,7 @@ namespace DR_C
                             {
                                 SqlConnection conn = null;
                                 string strKoneksi = "Data source = LAPTOP-DP3PQGGM\\DEPIIII; " +
-                                    "initial catalog = {0}; " +
-                                    "User ID = {1}; password = {2}";
+                                    "database=Rumahh_Sakitt; User ID = rara; password = rara123";
                                 conn = new SqlConnection(string.Format(strKoneksi, db, user, pass));
                                 conn.Open();
                                 Console.Clear();
@@ -61,6 +60,8 @@ namespace DR_C
                                                     Console.ReadLine();
                                                 }
                                                 break;
+                                            case '2':
+                                                8
                                         }
                                         }
                                     }
