@@ -185,6 +185,31 @@ namespace DR_C
                                                     }
                                                 }
                                                 break;
+                                            case '7':
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Input Transaksi\n");
+                                                    Console.Write("Masukkan id transaksi: ");
+                                                    string id_trnsk = Console.ReadLine();
+                                                    Console.Write("Masukkan  id pasien : ");
+                                                    string id_psnT = Console.ReadLine();
+                                                    Console.Write("Masukkan  Petugas: ");
+                                                    string id_ptgT = Console.ReadLine();
+                                                    Console.Write("Masukkan Total Transaksi : ");
+                                                    string ttl_T = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(id_trnsk, id_psnT, id_ptgT, ttl_T);
+                                                        conn.Close();
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki akses untuk menambah data");
+                                                        Console.WriteLine("Tekan enter untuk melanjutkan.");
+                                                        Console.ReadLine();
+                                                    }
+                                                }
+                                                break;
                                         }
                                         
                                     }
