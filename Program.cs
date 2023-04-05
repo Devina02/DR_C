@@ -10,6 +10,21 @@ namespace DR_C
     {
         static void Main(string[] args)
         {
+            Program pr = new Program();
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Koneksi Ke DataBase\n");
+                    Console.Write("Masukkan User ID : ");
+                    string user = Console.ReadLine();
+                    Console.Write("Masukkan Password : ");
+                    string pass = Console.ReadLine();
+                    Console.Write("Masukkan DataBase tujuan : ");
+                    string db = Console.ReadLine();
+                    Console.Write("\nKetik K untuk koneksi ke DataBase : ");
+                }
+            }
         }
     }
 }
