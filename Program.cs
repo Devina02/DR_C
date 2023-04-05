@@ -137,6 +137,27 @@ namespace DR_C
                                                     }
                                                 }
                                                 break;
+                                            case '4':
+                                                {
+                                                    Console.Clear();
+                                                    Console.WriteLine("Input Ruang Rawat Inap\n");
+                                                    Console.Write("Masukkan id ruang: ");
+                                                    string id_rg = Console.ReadLine();
+                                                    Console.Write("Masukkan nama ruang : ");
+                                                    string nma_rg = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(id_rg, nma_rg);
+                                                        conn.Close();
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki akses untuk menambah data");
+                                                        Console.WriteLine("Tekan enter untuk melanjutkan.");
+                                                        Console.ReadLine();
+                                                    }
+                                                }
+                                                break;
                                         }
                                         
                                     }
