@@ -74,6 +74,17 @@ namespace DR_C
                                                     string glr = Console.ReadLine();
                                                     Console.Write("Masukkan spesialisasi dokter : ");
                                                     string spld = Console.ReadLine();
+                                                    try
+                                                    {
+                                                        pr.insert(id_d, Nmadpn_d, Nmablk_d, glr, spld);
+                                                        conn.Close();
+                                                    }
+                                                    catch
+                                                    {
+                                                        Console.WriteLine("\nAnda tidak memiliki akses untuk menambah data");
+                                                        Console.WriteLine("Tekan enter untuk melanjutkan.");
+                                                        Console.ReadLine();
+                                                    }
                                                 }
                                         }
                                         
