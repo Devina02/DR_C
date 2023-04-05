@@ -225,6 +225,10 @@ namespace DR_C
                                         }
                                         
                                     }
+                                    catch
+                                    {
+                                        Console.WriteLine("\nCheck for the value entered.");
+                                    }
 
                                 }
                             }
